@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <script src="ttt.js"></script>
+</head>
+<body>
+    <div id="main">
+        <h1>Tic Tac Toe</h1>
+        <p>
+            Game Start by just tap on box <br>
+            First player as <b>player X </b> <br>
+            Second Player as a <b>Player 0 </b> <br>
+        </p> <br>
+        <div class="ui">
+            <div class="row">
+                <input type="text" id="b1" class="cell" onclick="nextTurn1(); winner()" readonly>
+                <input type="text" id="b2" class="cell" onclick="nextTurn2(); winner()" readonly>
+                <input type="text" id="b3" class="cell" onclick="nextTurn3(); winner()" readonly>
+            </div>
+            <div class="row">
+                <input type="text" id="b4" class="cell" onclick="nextTurn4()" readonly>
+                <input type="text" id="b5" class="cell" onclick="nextTurn5()" readonly>
+                <input type="text" id="b6" class="cell" onclick="nextTurn6()" readonly>
+            </div>
+            <div class="row">
+                <input type="text" id="b7" class="cell" onclick="nextTurn7()" readonly>
+                <input type="text" id="b8" class="cell" onclick="nextTurn8()" readonly>
+                <input type="text" id="b9" class="cell" onclick="nextTurn9()" readonly>
+            </div>
+        </div>
+        <br>
+        <button id="buttton" onclick="GameReset()">RESET</button>
+        <p id="printMessage"></p>
+    </div>
+</body>
+</html>
